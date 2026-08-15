@@ -1,0 +1,33 @@
+name: Test package
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-package:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        unityVersion:
+          - 2022.3.36f1
+    steps:
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-${{ matrix.unityVersion }}
+          restore-keys: |
+            Library-
+
+      - uses: willykc/unity-package-tester@v3
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          unityVersion: ${{ matrix.unityVersion }}
+          testMode: EditMode
+          artifactsPath: artifacts/${{ matrix.unityVersion }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
