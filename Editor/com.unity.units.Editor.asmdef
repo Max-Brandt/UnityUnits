@@ -1,0 +1,18 @@
+{
+    "name": "com.unity.units.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:070610c4d13f92d47b06c46ceb71fe63"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "UnitsNet.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
