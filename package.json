@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "displayName": "Unity Units",
   "description": "A package to define physical units in Unity.",
-  "keywords": [units],
+  "keywords": [],
+  "unity": "6000.3",
+  "unityRelease": "17f1",
   "author": {
     "name": "Max Brandt"
   },
@@ -12,8 +14,5 @@
   },
   "testables": [
     "com.unity.units"
-  ],
-  "samples": [
-    {}
   ]
 }
