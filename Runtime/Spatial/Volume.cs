@@ -26,11 +26,6 @@ public struct Volume : IPhysicalValue<Volume.Units>
     public static Volume ConvertVolume(float value, Units From, Units To) => new(IPhysicalValue<Units>.Convert(value, From, To, _converters), To);
     public readonly float To(Units To) => IPhysicalValue<Units>.Convert(value, unit, To, _converters);
     public readonly Volume ToVolume(Units To) => new(IPhysicalValue<Units>.Convert(value, unit, To, _converters), To);
-
-    public static Density operator /(Mass m, Volume V) => new(m.To(Mass.Units.Kilogramm) / V.To(Volume.Units.CubicMeter), Density.Units.KilogramPerCubicMeter);
-
-    public static Area operator /(Volume V, Length l) => new(V.To(Volume.Units.CubicMeter)/l.To(Length.Units.Meter), Area.Units.SquareMeter);
-
     
     public enum Units { 
         CubicKilometer, 
