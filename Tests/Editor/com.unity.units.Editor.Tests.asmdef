@@ -1,0 +1,23 @@
+{
+    "name": "com.unity.units.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:070610c4d13f92d47b06c46ceb71fe63",
+        "GUID:d6a001638f5fe784083717c7dc3a78fe",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

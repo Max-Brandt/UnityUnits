@@ -44,7 +44,7 @@ public abstract class PhysicalValueDrawer : PropertyDrawer
         return row;
     }
 
-    private static float ConvertValue(SerializedProperty property, float value, int fromIndex, int toIndex)
+    internal static float ConvertValue(SerializedProperty property, float value, int fromIndex, int toIndex)
     {
         var quantityType = property.boxedValue.GetType();
         var unitType = quantityType.GetNestedType("Units");
