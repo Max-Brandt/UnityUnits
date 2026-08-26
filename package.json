@@ -4,8 +4,8 @@
   "displayName": "Unity Units",
   "description": "A package to define physical units in Unity.",
   "keywords": [],
-  "unity": "6000.3",
-  "unityRelease": "17f1",
+  "unity": "2022.3",
+  "unityRelease": "36f1",
   "author": {
     "name": "Max Brandt"
   },
