@@ -7,7 +7,7 @@ Strongly typed physical units and quantities for Unity — define a value once w
 
 ## Requirements
 
-- Unity `2022.3.36f1` or newer (see [`package.json`](package.json)) — verified against this version in [CI](.github/workflows/test-package.yml)
+- Unity `2022.3.36f1` or newer 
 
 ## Installation
 
